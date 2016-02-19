@@ -10,7 +10,7 @@
         /// <summary>
         /// Gets or sets a value indicating whether pretending the profiler is attached or not.
         /// </summary>
-        internal static bool PretendProfilerIsAttached { get; set; } 
+        internal static bool PretendProfilerIsAttached { get; set; }
 
         /// <summary>
         /// The function that needs to be called before sending a request to the server. Creates and initializes dependency telemetry item.
@@ -35,6 +35,21 @@
         {
             telemetry.Stop();
             telemetryClient.Track(telemetry);
+        }
+
+        /// <summary>
+        /// Function that needs to be invoked after the request call to the sever. Computes the duration of the request and tracks the dependency telemetry
+        /// item only if duration is greater than 10 milliseconds. 
+        /// </summary>
+        /// <param name="telemetryClient">Telemetry client object to track the telemetry item.</param>
+        /// <param name="telemetry">Telemetry item to compute the duration and track.</param>
+        internal static void EndTrackingLimited(TelemetryClient telemetryClient, DependencyTelemetry telemetry)
+        {
+            telemetry.Stop();
+            if (telemetry.Duration >= new TimeSpan(0, 0, 0, 0, 7))
+            {
+                telemetryClient.Track(telemetry);
+            }
         }
 
         /// <summary>
