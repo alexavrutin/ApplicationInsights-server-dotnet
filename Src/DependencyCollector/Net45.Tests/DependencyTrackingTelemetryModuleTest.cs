@@ -11,10 +11,10 @@
     using Microsoft.ApplicationInsights.Extensibility;
     using Microsoft.ApplicationInsights.Web.TestFramework;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-    /// <summary>
-    /// DependencyTrackingTelemetryModule .Net 4.5 specific tests. 
-    /// </summary>
+    using Fr8.ApplicationInsights.DependencyCollector;
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation;    /// <summary>
+                                                                         /// DependencyTrackingTelemetryModule .Net 4.5 specific tests. 
+                                                                         /// </summary>
     public partial class DependencyTrackingTelemetryModuleTest
     {
         private static readonly string IKey = "F8474271-D231-45B6-8DD4-D344C309AE69";

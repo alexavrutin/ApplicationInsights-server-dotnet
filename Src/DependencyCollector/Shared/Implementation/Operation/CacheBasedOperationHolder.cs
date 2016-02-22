@@ -1,4 +1,4 @@
-﻿namespace Microsoft.ApplicationInsights.DependencyCollector.Implementation.Operation
+﻿namespace Fr8.ApplicationInsights.DependencyCollector.Implementation.Operation
 {
     using System;
     using System.Collections.Generic;

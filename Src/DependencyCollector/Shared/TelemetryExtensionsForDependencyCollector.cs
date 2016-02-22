@@ -1,9 +1,9 @@
-﻿namespace Microsoft.ApplicationInsights.DependencyCollector
+﻿namespace Fr8.ApplicationInsights.DependencyCollector
 {
     using System.Data.SqlClient;
     using System.Net;
     using Microsoft.ApplicationInsights.DataContracts;
-    using Microsoft.ApplicationInsights.DependencyCollector.Implementation;
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation;
 
     /// <summary>
     /// Dependency Telemetry extension methods to associate with request objects and to store in conditional/cache tables to avoid duplicate tracking.

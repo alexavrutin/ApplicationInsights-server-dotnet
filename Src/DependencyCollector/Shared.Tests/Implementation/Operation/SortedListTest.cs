@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation.Operation;
     [TestClass]
     public class SortedListTest
     {

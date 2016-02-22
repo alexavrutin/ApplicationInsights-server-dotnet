@@ -1,7 +1,7 @@
-﻿namespace Microsoft.ApplicationInsights.DependencyCollector
+﻿namespace Fr8.ApplicationInsights.DependencyCollector
 {
     using System;
-    using Microsoft.ApplicationInsights.DependencyCollector.Implementation;
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation;
     using Microsoft.ApplicationInsights.Extensibility;
     using Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing;
     using Microsoft.Diagnostics.Instrumentation.Extensions.Intercept;
@@ -44,8 +44,8 @@
         /// </summary>
         public void Initialize(TelemetryConfiguration configuration)
         {
-            // Temporary fix to make sure that we initialize module once.
-            // It should be removed when configuration reading logic is moved to Web SDK.
+            //// Temporary fix to make sure that we initialize module once.
+            //// It should be removed when configuration reading logic is moved to Web SDK.
             if (!this.isInitialized)
             {
                 lock (this.lockObject)

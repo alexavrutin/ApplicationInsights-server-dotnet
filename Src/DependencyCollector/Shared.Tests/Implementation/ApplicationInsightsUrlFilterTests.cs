@@ -4,7 +4,7 @@
     using Microsoft.ApplicationInsights.Extensibility;
     using Microsoft.ApplicationInsights.Web.TestFramework;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation;
     [TestClass]
     public class ApplicationInsightsUrlFilterTests
     {

@@ -1,8 +1,8 @@
-﻿namespace Microsoft.ApplicationInsights.DependencyCollector.Implementation
+﻿namespace Fr8.ApplicationInsights.DependencyCollector.Implementation
 {
     using System;
     using System.Threading;
-    using Microsoft.ApplicationInsights.DependencyCollector.Implementation.Operation;
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation.Operation;
 
     internal class DependencyTableStore : IDisposable
     {

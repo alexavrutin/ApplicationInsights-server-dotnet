@@ -1,4 +1,4 @@
-﻿namespace Microsoft.ApplicationInsights.DependencyCollector.Implementation
+﻿namespace Fr8.ApplicationInsights.DependencyCollector.Implementation
 {
     using System;
     using System.Data;
@@ -6,9 +6,10 @@
     using System.Globalization;
     using System.Threading.Tasks;
     using Microsoft.ApplicationInsights.DataContracts;
-    using Microsoft.ApplicationInsights.DependencyCollector.Implementation.Operation;
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation.Operation;
     using Microsoft.ApplicationInsights.Extensibility;
     using Microsoft.ApplicationInsights.Extensibility.Implementation;
+    using Microsoft.ApplicationInsights;
 
     /// <summary>
     /// Concrete class with all processing logic to generate RDD data from the calls backs

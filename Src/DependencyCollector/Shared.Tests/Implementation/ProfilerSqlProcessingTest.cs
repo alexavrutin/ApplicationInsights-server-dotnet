@@ -19,7 +19,8 @@
     using Microsoft.Diagnostics.Tracing;
 #endif
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation;
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation.Operation;
     [TestClass]
     public sealed class ProfilerSqlProcessingTest : IDisposable
     {

@@ -1,10 +1,10 @@
-﻿namespace Microsoft.ApplicationInsights.DependencyCollector.Implementation
+﻿namespace Fr8.ApplicationInsights.DependencyCollector.Implementation
 {
     using System;
     using System.Data.SqlClient;
     using System.Net;
     using Microsoft.ApplicationInsights.DataContracts;
-
+    using Microsoft.ApplicationInsights;
     internal static class ClientServerDependencyTracker
     {
         /// <summary>
@@ -33,8 +33,9 @@
         /// <param name="telemetry">Telemetry item to compute the duration and track.</param>
         internal static void EndTracking(TelemetryClient telemetryClient, DependencyTelemetry telemetry)
         {
-            telemetry.Stop();
-            telemetryClient.Track(telemetry);
+            EndTrackingLimited(telemetryClient, telemetry);
+            ////telemetry.Stop();
+            ////telemetryClient.Track(telemetry);
         }
 
         /// <summary>

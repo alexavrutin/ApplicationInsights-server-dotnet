@@ -16,7 +16,9 @@
     <DefineConstants>$(DefineConstants);NET45;ALLOW_AGGRESSIVE_INLIGNING_ATTRIBUTE</DefineConstants>
     <NuGetPackageImportStamp>64dd8b6d</NuGetPackageImportStamp>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <CodeAnalysisRuleSet>C:\Users\alexavrutin\Projects\ApplicationInsights\ApplicationInsightsSDKRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
@@ -24,7 +26,7 @@
     <AssemblyName>Fr8.AI.DependencyCollector</AssemblyName>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace>Microsoft.ApplicationInsights.DependencyCollector</RootNamespace>
+    <RootNamespace>Fr8.ApplicationInsights.DependencyCollector</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">

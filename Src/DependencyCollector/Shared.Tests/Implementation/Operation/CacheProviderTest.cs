@@ -3,7 +3,7 @@
     using System;
     using System.Threading;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation.Operation;
     [TestClass]
     public class CacheProviderTest
     {

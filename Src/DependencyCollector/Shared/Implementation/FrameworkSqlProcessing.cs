@@ -1,12 +1,12 @@
-﻿namespace Microsoft.ApplicationInsights.DependencyCollector.Implementation
+﻿namespace Fr8.ApplicationInsights.DependencyCollector.Implementation
 {
     using System;
     using System.Globalization;
     using Microsoft.ApplicationInsights.DataContracts;
-    using Microsoft.ApplicationInsights.DependencyCollector.Implementation.Operation;
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation.Operation;
     using Microsoft.ApplicationInsights.Extensibility;
     using Microsoft.ApplicationInsights.Extensibility.Implementation;
-
+    using Microsoft.ApplicationInsights;
     internal sealed class FrameworkSqlProcessing : IDisposable
     {
         internal CacheBasedOperationHolder TelemetryTable;

@@ -4,6 +4,7 @@
     using Microsoft.ApplicationInsights.DataContracts;
     using Microsoft.ApplicationInsights.DependencyCollector.Implementation.Operation;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation.Operation;
 
     /// <summary>
     /// Shared WebRequestDependencyTrackingHelpers class tests.

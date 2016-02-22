@@ -1,4 +1,4 @@
-﻿namespace Microsoft.ApplicationInsights.DependencyCollector.Implementation
+﻿namespace Fr8.ApplicationInsights.DependencyCollector.Implementation
 {
     using System;
 #if NET45

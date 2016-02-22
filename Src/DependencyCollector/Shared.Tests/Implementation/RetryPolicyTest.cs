@@ -3,7 +3,7 @@
     using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Assert = Xunit.Assert;
-
+    using Fr8.ApplicationInsights.DependencyCollector.Implementation;
     [TestClass]
     public class RetryPolicyTest
     {

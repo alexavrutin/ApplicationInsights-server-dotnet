@@ -1,5 +1,6 @@
 ﻿namespace Microsoft.ApplicationInsights.DependencyCollector
 {
+    using Fr8.ApplicationInsights.DependencyCollector;
     using Microsoft.ApplicationInsights.Extensibility;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 

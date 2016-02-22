@@ -1,4 +1,4 @@
-﻿namespace Microsoft.ApplicationInsights.DependencyCollector.Implementation.Operation
+﻿namespace Fr8.ApplicationInsights.DependencyCollector.Implementation.Operation
 {
     /// <summary>
     /// Represents an object cache and provides the base methods and properties for accessing the object cache.

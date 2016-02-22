@@ -10,7 +10,7 @@
     using Microsoft.ApplicationInsights.Extensibility;
     using Microsoft.ApplicationInsights.Web.TestFramework;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+    using Fr8.ApplicationInsights.DependencyCollector;
     /// <summary>
     /// Tests for client server dependency tracker.
     /// </summary>
